@@ -1,0 +1,26 @@
+package Demo300;
+
+import java.util.Scanner;
+
+public class Example21 {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("请输入新员工的姓名：");
+        String name = scanner.next();
+        System.out.println("请输入新员工应聘的编程语言");
+        String lan=scanner.next();
+        switch (lan.hashCode()){
+            case 3254818:               //java  hashcode
+            case 2301506:               //Java  hashcode
+            case 2269730:               //JAVA  hashcode
+                System.out.println("员工"+name+"被分配到java开发部门");
+                break;
+            case 3104:                  //c#  hashcode
+            case 2122:                  //C#  hashcode
+                System.out.println("员工"+name+"被分配到c#开发部门");
+                break;
+            default:
+                System.out.println("不需要"+lan+"语言的程序员");
+        }
+    }
+}
