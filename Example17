@@ -1,0 +1,24 @@
+package Demo300;
+
+import java.util.Scanner;
+
+/**
+ * 左移乘2
+ * 右移分为无符号右移>>>(始终补0)和带符号右移>>（正数补0，负数补1）
+ */
+public class Example17 {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("请输入一个整数");
+        int num = scanner.nextInt();
+        System.out.println("输入的数为"+num);
+        System.out.println("该数乘以2为"+(num<<1));
+        System.out.println("该数乘以4为"+(num<<2));
+        System.out.println("该数乘以8为"+(num<<3));
+        System.out.println("该数乘以16为"+(num<<4));
+        System.out.println("该数除以2为"+(num>>1));
+        System.out.println("该数除以4为"+(num>>2));
+
+
+    }
+}
