@@ -1,0 +1,11 @@
+package Demo300;
+
+public class ErgodicArray24 {
+    public static void main(String[] args) {
+        String[] aves=new String[]{"白鹭","黄鹂","乌鸦","喜鹊","布谷鸟"};
+        int index=0;
+        while (index<aves.length){
+            System.out.println(aves[index++]);
+        }
+    }
+}
